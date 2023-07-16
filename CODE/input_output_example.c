@@ -1,11 +1,11 @@
 # include<stdio.h>
 
-void main(){
-
-    int val=-1;
-    if(val){
-        printf("true");
-    } else{
-        printf("false..");
+int main(){
+    int i;
+    printf("%d\n", i);
+    for ( ; i>0;i--) {
+        printf( "Sai Medha ECET\n");
     }
+
+    return 0;
 }

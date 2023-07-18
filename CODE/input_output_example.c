@@ -24,12 +24,19 @@ int main(){
     // printf("Entered character: %c\n", ch);
     // putchar(ch);
 
-    int a;
-    int b;
-    int c = scanf("%d %d" , &a,&b);
-    printf("value of data = %d\n" , c);
+    // int a;
+    // int b;
+    // int c = scanf("%d %d" , &a,&b);
+    // printf("value of data = %d\n" , c);
 
-    printf("%d",printf("Hello"));
+    // printf("%d",printf("Hello"));
+    printf("size of integer %d\n" , sizeof(int));
+    printf("size of char %d\n" , sizeof(char));
+    printf("size of float %d\n" , sizeof(float));
+    printf("size of double %d\n" , sizeof(double));
+    printf("size of long long %d\n" , sizeof(long long));
+
+
     
     return 0;
 }

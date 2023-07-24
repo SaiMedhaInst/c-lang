@@ -28,4 +28,7 @@ Percentage < 40% : Grade F
 ```
 
 4.Write a C program to input all sides of a triangle and check whether triangle is valid or not.
+
+
+
 5.Write a C program to check whether the triangle is equilateral, isosceles or scalene triangle.

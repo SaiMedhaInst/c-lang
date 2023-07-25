@@ -46,17 +46,34 @@ void main(){
        //}
 
 
-        int i = 10;
-        printf("%f\n" , i);
+      //   int i = 10;
+      //   printf("%f\n" , i);
 
-        char ch = '3.0123';
-        printf("%d\n",ch);
+      //   char ch = '3.0123';
+      //   printf("%d\n",ch);
 
-       float f = 10.2;
-       printf("%d\n", f);
+      //  float f = 10.2;
+      //  printf("%d\n", f);
 
+      int num = 0;
+      if(num){
+        printf("true if block");
+      } else{
+        printf("else block : false...");
+      }
 
+      // int age = 10;
+      // while(age) {
+      //   printf("%d", age);
+      // }
 
+      printf("start of the loop\n");
 
-    
+      int i =10;
+      while(i>0)
+      {
+        printf("hello world..\n");
+        i--;
+      }
+      printf("after loop\n");
 }

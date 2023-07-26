@@ -3,8 +3,8 @@
 
 void main() {
 
-
-    char str1[] = {'H','i'};
-    int len = strlen(str1);
-    printf("%s %d",str1, len);
+    char s1[] = "hi";
+    char s2[] = "hello";
+    char s3 = strcat(s1,s2);
+    printf("%s",s3); 
 }

@@ -20,6 +20,9 @@ void main() {
 
 */
 
+// complexity : n iteration..
+
+/*
     long num;
     printf("enter num: "); scanf("%ld", &num);
     int div_count = 0;
@@ -33,5 +36,29 @@ void main() {
     } else{
         printf("%ld not a prime number.",num);
     }
+
+*/
+    // squareRoot(n) iteration
+
+
+
+//reverse of array..
+    int n;
+    printf("enter n= \n");
+    scanf("%d", &n);
+    int arr[n];
+
+    printf("enter values: \n");
+    for(int i=0;i<n;i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("printing values.. \n");
+
+    for(int i = n-1; i>=0;i--) {
+        printf("%d ", arr[i]);
+    }
+
+
 
 }

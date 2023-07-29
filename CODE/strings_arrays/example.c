@@ -4,5 +4,9 @@
 
 void main() {
 
-    printf("%d", INT_MIN);
+    int arr[] = {10,20,30,40};
+
+    printf("%d", arr[0]);
+    printf("%d", [arr]0);
+
 }

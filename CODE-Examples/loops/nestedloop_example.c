@@ -10,6 +10,9 @@ void main() {
    // printf("%d",arr[1][2][0]);
 
    // Printing values of 3-D array
+
+
+/*
 for (int i = 0; i < 2; ++i) {
 	for (int j = 0; j < 3; ++j) {
 		for (int k = 0; k < 2; ++k) {
@@ -18,6 +21,17 @@ for (int i = 0; i < 2; ++i) {
 		}
 	}
 }
+
+*/		
+int i;
+
+for(i=0;i<100;i+=3){
+	printf("%d\n",i);
+    continue;
+    printf("Hello SaiMedha...");
+}
+
+printf("value i = %d", i);
 
 
 }

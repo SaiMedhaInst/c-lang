@@ -12,7 +12,7 @@ method2:
 #include<limits.h>
 void main() {
 
-    int arr[] = {4};
+    int arr[] ={10, 10, 10};
     int len = sizeof(arr)/sizeof(arr[0]);
 
     int first,second;
@@ -38,7 +38,7 @@ void main() {
     } 
     else
     {
-        printf("The second largest does not exist\n");
+        printf("aray size should be >2\n");
     }
 
 }

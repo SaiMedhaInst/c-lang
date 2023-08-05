@@ -256,3 +256,130 @@ int main() {
   return 0;
 }
 ```
+
+
+
+## FUNCTION PROTOTYPE
+----------------------------------------------------------------------------------------------------------------------------
+
+- A **_function prototype_** is used to declare the **_signature_** of a function, which includes its 
+	- name
+	- return type
+	- parameters
+- Function prototypes are important because they inform the compiler of the function's interface before it is called, allowing for proper type checking and error handling.
+When a **_function prototype_** is included in a C program, the compiler checks that the function is used correctly before running the program. It helps to catch errors early on before the program is executed.
+	- If a function is called with the wrong number or type of arguments, the compiler will generate an **_error message_**, preventing the program from crashing or behaving unexpectedly at runtime.
+
+
+
+- **_Function prototypes_** also make it easier to read and understand the code
+
+
+**Syntax**
+```c
+	return_type function_name(parameter_list);
+
+```
+
+**Example**
+```c
+	int add(int num1, int num2);
+```
+
+**Finding average of array elements**
+
+```c
+    #include <stdio.h>  
+    float calculate_average(int arr[], int size);   // function prototype.
+      
+    int main() {  
+        int arr[] = {1, 2, 3, 4, 5};  
+        int size = sizeof(arr)/sizeof(arr[0]);
+      
+        float average = calculate_average(arr, size);   // function calling
+		    printf("The average is: %.2f", average);  
+    
+        return 0;  
+    }  
+      
+    float calculate_average(int arr[], int size) {  //function implementation
+        float sum = 0.0;  
+        for (int i = 0; i< size; i++) {  
+            sum += arr[i];  
+        }  
+        return sum / size;  
+    } 
+```
+
+
+
+### Default function prototypes:
+
+If a function is called before it is **_defined_** or **_declared_**, the compiler will assume a default function prototype. 
+The **_default function prototype_** assumes that the function returns an **_int_** and takes any number of arguments of any type.
+
+```c
+#include<stdio.h>
+#include "calculator.h"
+void printInfo() {
+    printf("Hi.. am printInfo function :) , not taking any i/p.\n");
+}
+void main() {
+
+    printInfo();
+    printInfo("SaiMedha", 2023);
+}
+
+```
+
+
+**Common case uses**
+
+- Function prototypes are essential in large programs:
+- Function prototypes can be declared in header files
+- Function prototypes can be overloaded?
+	- C does not support function overloading like some other programming languages as it is not OOPs language.
+	- C supports indirectly with the help of _Generic keyword.
+
+
+
+
+
+**Guess the output**
+
+```c
+#include<stdio.h>
+
+float average(float,float);
+
+void main() {
+    average(22.6,23.7);
+}
+
+int average(float mathMark, float scienceMark) {
+    float avg = (mathMark + scienceMark) / 2;
+    printf("average: %f", avg);
+
+} 
+```
+
+```c
+#include <stdio.h>  
+  
+int factorial(int n);  
+  
+int main() {  
+    int n = 5;  
+    int result = factorial(n);  
+	printf("%d! = %d\n", n, result);  
+    return 0;  
+}  
+  
+int factorial(int n) {  
+    if (n == 0) {  
+        return 1;  
+    } else {  
+        return n * factorial(n-1);  
+    } 
+}	
+```
